@@ -9,6 +9,11 @@ namespace RestaurantViewer.Pages.Restaurants
 {
     public class IndexModel : PageModel
     {
+        public IndexModel()
+        {
+
+        }
+
         public void OnGet()
         {
         }
