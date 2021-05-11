@@ -9,23 +9,25 @@ using RestaurantViewer.Data;
 
 namespace RestaurantViewer.Pages.Restaurants
 {
-    public class IndexModel : PageModel
+    public class DetailModel : PageModel
     {
         private readonly IRestaurantData restaurantData;
 
-        public IEnumerable<Restaurant> Restaurants { get; set; }
+        public Restaurant Restaurant { get; set; }
 
-        [BindProperty(SupportsGet=true)]
-        public string SearchTerm { get; set; }
-
-        public IndexModel(IRestaurantData restaurantData)
+        public DetailModel(IRestaurantData restaurantData)
         {
             this.restaurantData = restaurantData;
         }
 
-        public void OnGet()
+        public IActionResult OnGet(int restaurantId)
         {
-            Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
+            Restaurant = restaurantData.GetById(restaurantId);
+            if(Restaurant == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            return Page();
         }
     }
 }
