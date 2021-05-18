@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantViewer", "RestaurantViewer.csproj", "{AB4D8FDB-2DE3-4DB1-9F66-4A6ADF24E702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantViewer.Core", "..\RestaurantViewer.Core\RestaurantViewer.Core.csproj", "{18AC55D8-95B2-4CA2-89CB-8FB6094AF968}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantViewer.Core", "..\RestaurantViewer.Core\RestaurantViewer.Core.csproj", "{18AC55D8-95B2-4CA2-89CB-8FB6094AF968}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantViewer.Data", "..\RestaurantViewer.Data\RestaurantViewer.Data.csproj", "{8031486C-BEA7-4C19-9DA0-7D34A5B3EB21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantViewer.Data", "..\RestaurantViewer.Data\RestaurantViewer.Data.csproj", "{8031486C-BEA7-4C19-9DA0-7D34A5B3EB21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
