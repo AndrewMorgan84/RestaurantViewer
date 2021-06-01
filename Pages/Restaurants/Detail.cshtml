@@ -1,9 +1,10 @@
 ﻿@page "{restaurantId:int?}"
 @model RestaurantViewer.Pages.Restaurants.DetailModel
 @{
+    ViewData["Title"] = "Detail";
 }
 
-@if(Model.Message != null)
+@if (Model.Message != null)
 {
     <div class="alert alert-info">@Model.Message</div>
 }
